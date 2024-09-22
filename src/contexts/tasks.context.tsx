@@ -15,7 +15,7 @@ type TasksContextProps = {
   isAdd: boolean
   setIsAdd: Dispatch<SetStateAction<boolean>>
   setIsDelete: Dispatch<SetStateAction<string | undefined>>
-  addTask: (value: string) => void
+  addTask: (value?: string) => void
   isDelete?: string
   cancel: () => void
   deleteTask: (id: string) => void
@@ -61,9 +61,12 @@ const TasksProvider = ({ children }: { children: ReactNode }) => {
   }, [])
 
   const addTask = useCallback(
-    (value: string) => {
-      setTasks((prev) => [...prev, { id: id, name: value, checked: false }])
-      cancel()
+    (value?: string) => {
+      console.log(value)
+      if (value !== undefined) {
+        setTasks((prev) => [...prev, { id: id, name: value, checked: false }])
+        cancel()
+      }
     },
     [cancel, id]
   )
