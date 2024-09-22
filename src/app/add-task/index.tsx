@@ -3,8 +3,6 @@ import { Button } from '@/components/button'
 import { TextInput } from '@/components/input'
 import { Modal } from '@/components/modal'
 import { useTasks } from '@/contexts/tasks.context'
-import settings from '@/styles/settings.module.scss'
-import { createStyleWithCustomProps } from '@/util/style-custom'
 import { useState } from 'react'
 
 export function AddTask() {
@@ -25,13 +23,7 @@ export function AddTask() {
       </label>
       <div className="add-task-container-button">
         <Button className="add-task-button cancel" onClick={cancel}>
-          <span
-            style={createStyleWithCustomProps({
-              '--color': settings.colorBlack,
-            })}
-          >
-            Cancelar
-          </span>
+          <span>Cancelar</span>
         </Button>
         <Button className="add-task-button add" onClick={() => addTask(title)}>
           <span>Adicionar</span>

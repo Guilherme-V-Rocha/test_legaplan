@@ -23,6 +23,9 @@
 
   &.cancel {
     background: $color-gray-light;
+    span {
+      color: $color-black;
+    }
   }
   &.add {
     background: linear-gradient(

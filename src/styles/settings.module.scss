@@ -16,12 +16,3 @@ $font-weight-semibold: 500;
 $font-weight-regular: 400;
 $font-size-base: 1rem;
 $font-size-large: 1.5rem;
-
-:export {
-  colorBlack: $color-black;
-  colorGrayLight: $color-gray-light;
-  colorDanger: $color-danger;
-  colorDangerLight: $color-danger-light;
-  colorBlueLight: $color-blue-light;
-  colorBlueMedium: $color-blue-medium;
-}

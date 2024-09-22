@@ -19,6 +19,9 @@
 
   &.cancel {
     background: $color-gray-light;
+    span {
+      color: $color-black;
+    }
   }
   &.delete {
     background: linear-gradient(
