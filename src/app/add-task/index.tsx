@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 export function AddTask() {
   const { cancel, addTask } = useTasks()
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState<string>()
   return (
     <Modal>
       <h1 className="add-task-title">Nova tarefa</h1>
