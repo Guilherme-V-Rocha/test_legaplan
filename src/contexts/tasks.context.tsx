@@ -71,6 +71,7 @@ const TasksProvider = ({ children }: { children: ReactNode }) => {
   const deleteTask = useCallback(
     (id: string) => {
       setTasks((prev) => prev.filter((value) => value.id !== id))
+      setTasksChecked((prev) => prev.filter((value) => value.id !== id))
       cancel()
     },
     [cancel]
