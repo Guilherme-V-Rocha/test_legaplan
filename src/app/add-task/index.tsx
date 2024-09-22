@@ -9,7 +9,7 @@ export function AddTask() {
   const { cancel, addTask } = useTasks()
   const [title, setTitle] = useState<string>()
   return (
-    <Modal>
+    <Modal top="28%">
       <h1 className="add-task-title">Nova tarefa</h1>
       <label htmlFor="title" className="label-title">
         <text className="title">Título</text>
