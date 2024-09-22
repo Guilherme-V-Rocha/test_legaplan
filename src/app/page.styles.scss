@@ -1,0 +1,29 @@
+@import '@/styles/settings.module.scss';
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.page-task-button {
+  height: 2.563rem;
+  width: 28.125rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  margin: 1.5rem 0 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    $color-blue-light 0%,
+    $color-blue-medium 68.65%
+  );
+  @media (max-width: 320px) {
+    width: fit-content;
+    padding: 1rem 4.031rem 1rem 4.031rem;
+  }
+}

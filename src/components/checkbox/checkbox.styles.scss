@@ -1,0 +1,54 @@
+@import '@/styles/settings.module.scss';
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: $color-white;
+    border-radius: 0.25rem;
+    border: 0.063rem solid $color-gray-dark;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: $color-blue-soft;
+    border: 0.063rem solid $color-blue;
+  }
+
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkmark:after {
+    left: 0.55rem;
+    top: 0.3rem;
+    width: 0.3rem;
+    height: 0.55rem;
+    border: solid $color-blue;
+    border-radius: 0.094rem;
+    border-width: 0 0.15rem 0.15rem 0;
+    transform: rotate(45deg);
+  }
+}

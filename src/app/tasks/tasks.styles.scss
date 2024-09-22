@@ -1,0 +1,8 @@
+@import '@/styles/settings.module.scss';
+
+.tasks.text {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  color: $color-black;
+  opacity: 54%;
+}

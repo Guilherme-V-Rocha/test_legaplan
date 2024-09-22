@@ -1,0 +1,27 @@
+$color-secondary: #1018280d;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-white-light: #eaecf0;
+$color-blue: #0070f3;
+$color-blue-light: #0796d3;
+$color-blue-medium: #53c0f0;
+$color-blue-soft: #a0dcf6;
+$color-danger: #d30707;
+$color-danger-light: #f05353;
+$color-gray-light: #e7eefb;
+$color-gray-soft: #f7f9fd;
+$color-gray-dark: #d7dde9;
+
+$font-weight-semibold: 500;
+$font-weight-regular: 400;
+$font-size-base: 1rem;
+$font-size-large: 1.5rem;
+
+:export {
+  colorBlack: $color-black;
+  colorGrayLight: $color-gray-light;
+  colorDanger: $color-danger;
+  colorDangerLight: $color-danger-light;
+  colorBlueLight: $color-blue-light;
+  colorBlueMedium: $color-blue-medium;
+}

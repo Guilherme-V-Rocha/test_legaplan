@@ -1,0 +1,30 @@
+@import '@/styles/settings.module.scss';
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px dashed $color-gray-dark;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  &:hover {
+    cursor: pointer;
+    border-width: 0 0 0.063rem;
+    border-style: solid;
+    border-color: $color-gray-soft;
+    background-color: $color-gray-soft;
+  }
+  .nameList {
+    text-decoration: var(--text-decoration, 'none');
+    font-weight: $font-weight-regular;
+    font-size: $font-size-base;
+    color: $color-black;
+    opacity: var(--opacity, '100%');
+  }
+  div {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+  }
+}

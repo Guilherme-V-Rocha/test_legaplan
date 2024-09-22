@@ -1,0 +1,41 @@
+@import '@/styles/settings.module.scss';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 2.969vw 0 2.969vw;
+  padding-bottom: 1.5rem;
+  border-bottom: 0.063rem $color-gray-dark solid;
+
+  h1 {
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-large;
+    margin-left: 6rem;
+  }
+  h2 {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-base;
+    color: $color-black;
+    opacity: 54%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+  }
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    margin: 1.5rem 7.4vw 0 7.4vw;
+
+    h1 {
+      font-size: $font-size-base;
+      margin-left: 0;
+    }
+  }
+}
