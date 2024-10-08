@@ -1,4 +1,4 @@
-import '@/components/checkbox/checkbox.styles.scss'
+import '@/app/list/checkbox/checkbox.styles.scss'
 
 type CheckboxProps = {
   isChecked: (value: boolean) => void

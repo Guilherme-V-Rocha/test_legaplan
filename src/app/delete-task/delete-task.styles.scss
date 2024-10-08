@@ -16,7 +16,16 @@
   width: 11.563rem;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
-
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  span {
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-base;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
   &.cancel {
     background: $color-gray-light;
     span {
@@ -24,13 +33,16 @@
     }
   }
   &.delete {
+    span {
+      color: $color-white;
+    }
     background: linear-gradient(
       90deg,
       $color-danger 0%,
       $color-danger-light 68.65%
     );
   }
-  @media (max-width: 320px) {
+  @media (max-width: 481px) {
     width: 100%;
   }
 }
@@ -38,7 +50,7 @@
 .delete-task-container-button {
   column-gap: 1rem;
   display: flex;
-  @media (max-width: 320px) {
+  @media (max-width: 481px) {
     flex-direction: column;
     row-gap: 1rem;
   }

@@ -1,5 +1,5 @@
+import { Checkbox } from '@/app/list/checkbox'
 import '@/app/list/list.styles.scss'
-import { Checkbox } from '@/components/checkbox'
 import { useTasks } from '@/contexts/tasks.context'
 import { TaskData } from '@/data/tasks'
 import DeleteIcon from '@/images/icons/deleteIcon.svg'

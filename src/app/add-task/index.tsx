@@ -1,6 +1,4 @@
 import '@/app/add-task/add-task.styles.scss'
-import { Button } from '@/components/button'
-import { TextInput } from '@/components/input'
 import { Modal } from '@/components/modal'
 import { useTasks } from '@/contexts/tasks.context'
 import { useState } from 'react'
@@ -13,21 +11,21 @@ export function AddTask() {
       <h1 className="add-task-title">Nova tarefa</h1>
       <label htmlFor="title" className="label-title">
         <text className="title">Título</text>
-        <TextInput.Root>
-          <TextInput.Input
+        <div className="add-task-input-root">
+          <input
             value={title}
             placeholder="Digite"
             onChange={(e) => setTitle(e.target.value)}
           />
-        </TextInput.Root>
+        </div>
       </label>
       <div className="add-task-container-button">
-        <Button className="add-task-button cancel" onClick={cancel}>
+        <button className="add-task-button cancel" onClick={cancel}>
           <span>Cancelar</span>
-        </Button>
-        <Button className="add-task-button add" onClick={() => addTask(title)}>
+        </button>
+        <button className="add-task-button add" onClick={() => addTask(title)}>
           <span>Adicionar</span>
-        </Button>
+        </button>
       </div>
     </Modal>
   )

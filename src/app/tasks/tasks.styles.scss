@@ -6,3 +6,25 @@
   color: $color-black;
   opacity: 54%;
 }
+
+.card {
+  position: relative;
+  width: 24.125rem;
+  height: 23.875rem;
+  box-shadow: 0px 1px 2px 0px $color-secondary;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $color-white;
+  padding: 2rem;
+  gap: 1.5rem;
+  border: 1px $color-white-light solid;
+  border-radius: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @media (max-width: 481px) {
+    margin: 0 6.4rem 0 6.4rem;
+    width: 76vw;
+  }
+}

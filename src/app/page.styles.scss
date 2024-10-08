@@ -6,6 +6,9 @@
   align-items: center;
   flex-direction: column;
   margin-top: 2.5rem;
+  @media (max-width: 481px) {
+    margin: 2.5rem 7.4vw 0 7.4vw;
+  }
 }
 
 .page-task-button {
@@ -22,8 +25,19 @@
     $color-blue-light 0%,
     $color-blue-medium 68.65%
   );
-  @media (max-width: 320px) {
-    width: fit-content;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+  outline: 0;
+  span {
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-base;
+    color: $color-white;
+  }
+  @media (max-width: 481px) {
     padding: 1rem 4.031rem 1rem 4.031rem;
   }
 }

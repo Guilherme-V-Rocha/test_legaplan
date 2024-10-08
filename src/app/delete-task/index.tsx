@@ -1,5 +1,4 @@
 import '@/app/delete-task/delete-task.styles.scss'
-import { Button } from '@/components/button'
 import { Modal } from '@/components/modal'
 import { useTasks } from '@/contexts/tasks.context'
 
@@ -15,15 +14,15 @@ export function DeleteTask({ isDelete }: DeleteTaskProps) {
         Tem certeza que você deseja deletar essa tarefa?
       </text>
       <div className="delete-task-container-button">
-        <Button className="delete-task-button cancel" onClick={cancel}>
+        <button className="delete-task-button cancel" onClick={cancel}>
           <span>Cancelar</span>
-        </Button>
-        <Button
+        </button>
+        <button
           className="delete-task-button delete"
           onClick={() => deleteTask(isDelete)}
         >
           <span>Deletar</span>
-        </Button>
+        </button>
       </div>
     </Modal>
   )

@@ -1,7 +1,6 @@
 'use client'
 
 import '@/app/page.styles.scss'
-import { Button } from '@/components/button'
 import { useTasks } from '@/contexts/tasks.context'
 import '@/styles/settings.module.scss'
 import { AddTask } from './add-task'
@@ -17,9 +16,9 @@ export default function Home() {
       <Header />
       <div className="page-container">
         <Tasks />
-        <Button className="page-task-button" onClick={() => setIsAdd(true)}>
+        <button className="page-task-button" onClick={() => setIsAdd(true)}>
           <span>Adicionar nova Tarefa</span>
-        </Button>
+        </button>
         {isAdd && isDelete === undefined && <AddTask />}
         {isDelete !== undefined && <DeleteTask isDelete={isDelete} />}
       </div>

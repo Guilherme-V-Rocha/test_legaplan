@@ -1,12 +1,11 @@
 import { List } from '@/app/list'
 import '@/app/tasks/tasks.styles.scss'
-import { Card } from '@/components/card'
 import { useTasks } from '@/contexts/tasks.context'
 
 export function Tasks() {
   const { tasks, tasksChecked } = useTasks()
   return (
-    <Card>
+    <div className="card">
       {tasks.length > 0 && (
         <text className="tasks.text">Suas tarefas de hoje</text>
       )}
@@ -21,6 +20,6 @@ export function Tasks() {
         .map((task) => (
           <List key={task.id} task={task} />
         ))}
-    </Card>
+    </div>
   )
 }
